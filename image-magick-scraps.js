@@ -33,46 +33,35 @@ montage \
 
 
 montage \
-	-tile 5x4 \
-	-density 150 \
-	-background "#fff" \
-	-define pdf:fit-page=1500x1060 \
-	-resize 375x265 \
-	-geometry +1+1 \
-	CoronavirusEssentialsPedsOnc2.pdf \
-	CoronavirusEssentialsPedsOnc2.png
-
-montage \
 	-tile 5x2 \
 	-density 150 \
 	-background "#fff" \
-	-define pdf:fit-page=1500x1060 \
-	-resize 375x265 \
+	-define pdf:fit-page=1060x1500 \
+	-resize 265x375 \
 	-geometry +1+1 \
-	Handbook-of-COVID-19-Prevention-and-Treatment.pdf \
-	Handbook-of-COVID-19-Prevention-and-Treatment.png
+	COVID-19-Radiation-Oncology-Targeted-Response-for-Pandemic-Preparedness-copy.pdf \
+	COVID-19-Radiation-Oncology-Targeted-Response-for-Pandemic-Preparedness-copy.png
+
 
 montage \
-	-tile 5x2 \
-	-density 150 \
+	-tile 3x1 \
+	-density 300 \
 	-background "#fff" \
 	-define pdf:fit-page=1500x1060 \
 	-resize 375x265 \
 	-geometry +1+1 \
-	WHO-China-Joint-Mission-on-COVID-19-Final-Report.pdf \
-	WHO-China-Joint-Mission-on-COVID-19-Final-Report.png
-
+	COVID-19-Health-Link_Survivors_Spanish_3.20.20.pdf \
+	COVID-19-Health-Link_Survivors_Spanish_3.20.20.png
 
 montage \
-	-tile 5x2 \
-	-density 150 \
+	-tile 3x1 \
+	-density 300 \
 	-background "#fff" \
 	-define pdf:fit-page=1500x1060 \
-	-resize 375x265 \
+	-resize 750x530 \
 	-geometry +1+1 \
-	mindkids-info-coronavirus-para-ninhos.pdf \
-	mindkids-info-coronavirus-para-ninhos.png
-
+	COVID-19-and-Your-Child-with-Cancer_Spanish_3.20.20.pdf \
+	COVID-19-and-Your-Child-with-Cancer_Spanish_3.20.20.png
 
 montage \
 	-tile 4x2 \
@@ -110,9 +99,4 @@ convert questions-on-protection.pdf questions-on-protection.png
 
 convert -colorspace sRGB -density 288 input.pdf -resize 25% output.png
 
-
-respiratory-support-strategy-of-severe-acute-respiratory-failure-caused-by-SARS-CoV-2-infection-in-children
-
-Handbook-of-COVID-19-Prevention-and-Treatment.pdf
-
-Colocacion-Retiro-equipo-de-proteción-personal-INER
+COVID-19-Radiation-Oncology-Targeted-Response-for-Pandemic-Preparedness.pdf
