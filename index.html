@@ -39,10 +39,12 @@
 
 			div.seminar {max-width:600px; margin-left:3em}
 			p.intro {max-width:600px; border:1px solid #ccc; padding:1em}
-			div.toc {max-width:600px; border:1px solid #ccc; padding:1em; background:#eee}
-
+			#index {max-width:600px; border:1px solid #ccc; padding:1em; background:#eee}
 
 			.enlaces {max-width:800px}
+
+			h2 {border-top:1px solid #000; margin-bottom:0; padding-bottom:0; margin-top:1.5em; padding-top:1.5em}
+			.up {display:block; margin-bottom:2em; margin-left:2em}
 		</style>
 	</head>
 	<body>
@@ -55,8 +57,8 @@
 		</div>
 
 
-		<div class="toc">
-			<h2>Indice <em>(Index)</em></em></h2>
+		<div id="index" class="index">
+			<h2 style="border-top:0; padding-top:0; margin-top:0.5em">Indice <em>(Index)</em></em></h2>
 			<ul>
 				<li>
 					<a href="#links">Enlaces <em>(Links)</em></a>
@@ -74,6 +76,7 @@
 		</div>
 
 		<h2 id="links">Enlaces <em>(Links)</em></h2>
+		<a href="#index" class="up">Indice / <em>Index</em> ↑</a>
 
 		<div class="enlaces">
 			<ul>
@@ -93,13 +96,19 @@
 		</div>
 
 		<h2 id="videos">Videos</h2>
-		<a href="video/Colocacion-Retiro-equipo-de-proteción-personal-INER">
-			Colocación-Retiro equipo de proteción personal INER
-			</span><br />
-			<img src="img/video/iner.jpg" />
-		</a>
+		<a href="#index" class="up">Indice / <em>Index</em> ↑</a>
+		<ul>
+			<li>
+				<a href="video/Colocacion-Retiro-equipo-de-proteción-personal-INER">
+					Colocación-Retiro equipo de proteción personal INER
+					</span><br />
+					<img src="img/video/iner.jpg" />
+				</a>
+			</li>
+		</ul>
 
 		<h2 id="docs">Documentos (<em>Documents</em>)</h2>
+		<a href="#index" class="up">Indice / <em>Index</em> ↑</a>
 
 		<ul class="pdfs">
 			<li>
@@ -184,7 +193,8 @@
 			</li>
 		</ul>
 
-		<h2>Artículos <em>(Articles)</em></h2>
+		<h2 id="articles">Artículos <em>(Articles)</em></h2>
+		<a href="#index" class="up">Indice / <em>Index</em> ↑</a>
 		<ul class="pdfs">
 			<li>
 				<a href="pdf/covid19-children.pdf">
