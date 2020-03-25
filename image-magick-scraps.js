@@ -84,6 +84,10 @@ montage \
 	covid19-children.pdf \
 	covid19-children.png
 
+montage -tile 4x2 \
+	-geometry +1+1 \
+	manos-*.png \
+	correcto-lavado-manos.png
 
 montage -tile 3x3 \
 	-geometry +1+1 \
