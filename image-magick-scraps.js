@@ -48,7 +48,7 @@ montage \
 	-density 300 \
 	-background "#fff" \
 	-define pdf:fit-page=1500x1060 \
-	-resize 375x265 \
+	-resize 750x530 \
 	-geometry +1+1 \
 	COVID-19-Health-Link_Survivors_Spanish_3.20.20.pdf \
 	COVID-19-Health-Link_Survivors_Spanish_3.20.20.png
@@ -72,6 +72,11 @@ montage \
 	-geometry +1+1 \
 	covid19-children.pdf \
 	covid19-children.png
+
+montage -tile 5x3 \
+	-geometry +1+1 \
+	preparedness-*.png \
+	preparedness.png
 
 montage -tile 4x2 \
 	-geometry +1+1 \
