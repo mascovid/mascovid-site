@@ -10,63 +10,165 @@
 		<style>
 			body {font-family:sans-serif; line-height:2em; padding:0 1em}
 			a {text-decoration:none; color:blue}
-			a:hover {background:blue; color:white}
+			a:hover {text-decoration:underline}
+			a:hover span {text-decoration:underline}
+
 			h1 {color:#7c1e34; font-size:3em; border-bottom:10px solid #c50b3b; height:3em}
 
 			ul.pdfs li{
 				list-style: none;
 			}
-			ul.pdfs li:before{
+			ul.pdfs li a:before{
 				content: '';
 				display: inline-block;
 				vertical-align:middle;
 				height: 30px;
 				width: 30px;
-				margin-left:-30px;
-				background-image:url(pdf-icon.png);
+				margin-left:-40px;
+				margin-right:10px;
+				background-image:url(img/pdf-icon.png);
 			}
 
-			ul.questions a {color:white; display:inline-block; padding:0.3em 0.7em}
-			ul.lquestions a:hover {text-decoration:underline}
+			ul.pdfs a span {display:inline-block; padding:0.3em 0.7em}
+			ul.pdfs li {border-bottom:1px solid #ccc; padding-bottom:1em; margin-bottom:1em}
+			li.question a span {color:white; display:inline-block; padding:0.3em 0.5em}
 
-			li.diagnosis a {background:#86bd42}
-			li.pregnancy a {background:#e95298}
-			li.protection a {background:#3b6ca6}
+			li.diagnosis a span {background:#86bd42}
+			li.children a span, li.children a:hover span {background:#e95298}
+			li.protection a span {background:#3b6ca6}
 
 			div.seminar {max-width:600px; margin-left:3em}
 			p.intro {max-width:600px; border:1px solid #ccc; padding:1em}
+
+			.enlaces {max-width:800px}
 		</style>
 	</head>
 	<body>
-		<h1><img src="mas-logo-square.png" style="width:150px" />MAS: Recursos COVID-19</h1>
+		<h1><img src="img/mas-logo-square.png" style="width:150px" />MAS: Recursos COVID-19</h1>
 
 		<p class="intro">
 			Esperando estén todos bien, ante la situación actual del COVID-19 compartiremos la información que tengamos al alcance y que consideramos les sea de utilidad para ustedes y sus colaboradores.
 		</p>
 
+		<h2>Enlaces</h2>
+
+		<div class="enlaces">
+			<ul>
+				<li>
+					<a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/index.html">CDC: Coronavirus Disease (COVID-19)</a>
+				</li>
+				<li>
+					<a href="https://www.nejm.org/coronavirus?cid=DM88311&bid=165326853">The New England Journal of Medicine: Coronavirus articles</a>. Todos liberados por el NEJM.
+				</li>
+				<li>
+					<a href="https://openwho.org/courses/introduccion-al-ncov">Nuevos virus respiratorios, incluido el COVID-19: métodos de detección, prevención, respuesta y control</a> Curso gratuito de la OMS de 3 horas de duración y en distintos idiomas.
+				</li>
+				<li>
+					<a href="https://imswebcast.feinberg.northwestern.edu/Mediasite/Play/7cce725c2dfe4a9eb680f21d32b71ae21d">COVID-10: An update on the current situation</a>: Presentación del 17 de Marzo de Northwestern Medicine.
+				</li>
+			</ul>
+		</div>
+
+		<h2>Videos</h2>
+		<a href="video/Colocacion-Retiro-equipo-de-proteción-personal-INER">
+			Colocación-Retiro equipo de proteción personal INER
+			</span><br />
+			<img src="img/video/iner.jpg" />
+		</a>
+
 		<h2>Documentos</h2>
+
 		<ul class="pdfs">
 			<li>
-				<a href="pdf/WHO-China-Joint-Mission-on-COVID-19-Final-Report.pdf">Report of the WHO-China Joint Mission on Coronavirus Disease 2019 (COVID-19)</a>
+				<a href="pdf/CoronavirusEssentialsPedsOnc2.pdf">
+					<span>
+						Coronavirus en Unidades de Oncologia Pediatrica, Miguela A. Caniza
+					</span><br />
+					<img src="img/contact-sheet/CoronavirusEssentialsPedsOnc2.png" />
+				</a>
 			</li>
 			<li>
-				<a href="pdf/covid19-children.pdf">Diagnosis, treatment, and prevention of 2019 novel coronavirus infection in children: experts’ consensus statement</a>
+				<a href="pdf/mindkids-info-coronavirus-para-ninhos.pdf">
+					<span>
+						MINDKIDS: Información para niños
+					</span><br />
+					<img src="img/contact-sheet/mindkids-info-coronavirus-para-ninhos.png" />
+				</a>
+			</li>
+			<li>
+				<a href="pdf/respiratory-support-strategy-of-severe-acute-respiratory-failure-caused-by-SARS-CoV-2-infection-in-children.pdf">
+					<span>
+						Consideration of the respiratory support strategy of severe acute respiratory failure caused by SARS-CoV-2 infection in children
+					</span><br />
+					<img src="img/contact-sheet/respiratory-support-strategy-of-severe-acute-respiratory-failure-caused-by-SARS-CoV-2-infection-in-children.png" />
+				</a>
+			</li>
+			<li class="diagnosis question">
+				<a href="pdf/diagnosis-and-treatment.pdf">
+					<span>
+						Diagnosis and treatment: COVID-19 Prevention and Control
+					</span><br />
+					<img src="img/contact-sheet/diagnosis-and-treatment.png" />
+				</a>
+			</li>
+			<li class="protection question">
+				<a href="pdf/questions-on-protection.pdf">
+					<span>
+						Questions for pregnant women, mother and children
+					</span><br />
+					<img src="img/contact-sheet/questions-on-protection.png" />
+				</a>
+			</li>
+			<li class="children question">
+				<a href="pdf/questions-pregnancy-mother-children.pdf">
+					<span>
+						Questions for pregnant women, mother and children
+					</span><br />
+					<img src="img/contact-sheet/questions-pregnancy-mother-children.png" />
+				</a>
+			</li>
+			<li>
+				<a href="pdf/WHO-China-Joint-Mission-on-COVID-19-Final-Report.pdf">
+					<span>
+						Report of the WHO-China Joint Mission on Coronavirus Disease 2019 (COVID-19)
+					</span><br />
+					<img src="img/contact-sheet/WHO-China-Joint-Mission-on-COVID-19-Final-Report.png" />
+				</a>
+			</li>
+			<li>
+				<a href="pdf/COVID-19-clinical-update-for-pediatric-HematologyOncology-BTM-Toronto.pdf">
+					<span>
+						COVID-19 Clinical Update for Pediatric Hematology/Oncology/BMT, Tristan Knight
+					</span><br />
+					<img src="img/contact-sheet/COVID-19-clinical-update-for-pediatric-HematologyOncology-BTM-Toronto.png" />
+				</a>
+			</li>
+			<li>
+				<a href="pdf/Handbook-of-COVID-19-Prevention-and-Treatment.pdf">
+					<span>
+						Handbook of COVID-19 Prevention and Treatment - The First Affiliated Hospital, Zhejian University School of Medicine
+					</span><br />
+					<img src="img/contact-sheet/Handbook-of-COVID-19-Prevention-and-Treatment.png" />
+				</a>
+			</li>
+			<li>
+				<a href="pdf/advice-non-steroidal-anti-inflammatories-COVID-19.pdf">
+					<span>
+						EMA gives advice on the use of non-steroidal anti- inflammatories for COVID-19
+					</span><br />
+					<img src="img/contact-sheet/advice-non-steroidal-anti-inflammatories-COVID-19.png" />
+				</a>
 			</li>
 		</ul>
-		<ul class="pdfs questions">
-			<li class="diagnosis">
-				<a href="pdf/diagnosis-and-treatment.pdf">
-					Diagnosis and treatment: COVID-19 Prevention and Control
-				</a>
-			</li>
-			<li class="protection">
-				<a href="pdf/questions-on-protection.pdf">
-					Questions on protection
-				</a>
-			</li>
-			<li class="pregnancy">
-				<a href="pdf/questions-pregnancy-mother-children.pdf">
-					Questions for pregnant women, mother and children
+
+		<h2>Artículos</h2>
+		<ul class="pdfs">
+			<li>
+				<a href="pdf/covid19-children.pdf">
+					<span>
+						Diagnosis, treatment, and prevention of 2019 novel coronavirus infection in children: experts’ consensus statement
+					</span><br />
+					<img src="img/contact-sheet/covid19-children.png" />
 				</a>
 			</li>
 		</ul>
